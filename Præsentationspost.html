@@ -13,33 +13,39 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,700&display=swap" 
     rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-<section class="header">
-    <nav>
-         <a href="index.html">
-            <img src="Logo.png" width="100px" height="100px"></a>
-         <div class="nav-links" id="navLinks">
-            <i class="fas fa-times" onclick="SkjulMenu()"></i>
-            <ul>
-                <li><a href="Præsentationspost.html">Forside</a></li>
-                <li><a href="Navbaren.html">Produkter</a></li>
-                <li><a href="Om-Mig.html">Om mig</a></li>
-                <li><a href="Kontakt.html">Kontakt</a></li>
-            </ul>
-        </div>
-        <i class="fas fa-bars" onclick="VisMenu()"></i>
-    </nav>
+    <header class="header">
 
-    <div class="tekst-indhold">
-        <h1>Præsentationspost</h1>
-        <br>
-        <p>Velkommen til min præsentation! Udforsk mit første semester fyldt med kreative projekter. 
-          <br>Dyk ned i mine resultater og oplev en rejse af indsigt og passion. 
-        </p>
-        <a href="#" class="hero-btn">Mere Om Mig</a>
-    </div>
-</section>
+        <a href="#">
+        <img src="p3/Logo.png" class="logo">
+        </a>
+
+        <input type="checkbox" id="check">
+        <label for="check" class="ikoner">
+            <i class='bx bx-menu' id="menu-ikon"></i>
+            <i class='bx bx-x' id="lukke-ikon"></i>
+        </label>
+
+        <nav class="navbar">
+            <a href="Præsentationspost.html" style="--i:0;">Forside</a>
+            <a href="Navbaren.html" style="--i:1;">Produkter</a>
+            <a href="Om-Mig.html" style="--i:2;">Om mig</a>
+            <a href="Kontakt.html" style="--i:3;">Kontakt</a>
+        </nav>
+    </header>
+
+    <section class="semester">
+        <div class="banner"></div>
+        <div class="tekst-indhold">
+            <h1>Præsentationspost</h1>
+            <br>
+            <p>Velkommen til min præsentation! Udforsk mit første semester fyldt med kreative projekter. 
+              <br>Dyk ned i mine resultater og oplev en rejse af indsigt og passion. 
+            </p>
+        </div>
+    </section>
 
 <!--Produkter-->
 
@@ -86,16 +92,10 @@
         </div>
         <div class="billede-container">
             
-            <img src="Portræt uden baggrund.png" alt="Kontaktbillede">
+            <img src="p3/Portræt uden baggrund.png" alt="Kontaktbillede">
         </div>
     </div>
     
-    
-    
-
-
-
-
 </section>
 
 <div class="linje"></div>
@@ -114,28 +114,6 @@
 </section>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- Javascript for toggle menu -->
-<script>
-    var navLinks = document.getElementById("navLinks");
-    function VisMenu(){
-        navLinks.style.right = "0";
-    }
-    function SkjulMenu(){
-        navLinks.style.right = "-200px";
-    }
-</script>
 
 
 
