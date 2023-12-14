@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Præsentationspost</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+    crossorigin="anonymous"  referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Præsentationspost.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,700&display=swap" 
+    rel="stylesheet">
+</head>
+<body>
+<section class="header">
+    <nav>
+         <a href="index.html">
+            <img src="Logo.png" width="100px" height="100px"></a>
+         <div class="nav-links" id="navLinks">
+            <i class="fas fa-times" onclick="SkjulMenu()"></i>
+            <ul>
+                <li><a href="Præsentationspost.html">Forside</a></li>
+                <li><a href="Navbaren.html">Produkter</a></li>
+                <li><a href="Om-Mig.html">Om mig</a></li>
+                <li><a href="Kontakt.html">Kontakt</a></li>
+            </ul>
+        </div>
+        <i class="fas fa-bars" onclick="VisMenu()"></i>
+    </nav>
+
+    <div class="tekst-indhold">
+        <h1>Præsentationspost</h1>
+        <br>
+        <p>Velkommen til min præsentation! Udforsk mit første semester fyldt med kreative projekter. 
+          <br>Dyk ned i mine resultater og oplev en rejse af indsigt og passion. 
+        </p>
+        <a href="#" class="hero-btn">Mere Om Mig</a>
+    </div>
+</section>
+
+<!--Produkter-->
+
+<section class="Produkter">
+    <h1>Mine Produkter!</h1>
+    <p>Her er en oversigt, over nogle af de produkter jeg har skabt! 
+        <br> Tryk på ''Produkter'' i navigations baren, for at se mere!
+    </p>
+
+<div class="row">
+    <div class="mine-produkter">
+    <h3>Produkt Fotografering</h3>
+    <p>Fotografering af Prada parfume!</p>
+</div>
+
+<div class="mine-produkter">
+    <h3>Pentool Portrait</h3>
+    <p>Pentool portrait lavet via Adobe Illustrator!</p>
+</div>
+
+<div class="mine-produkter">
+    <h3>Branding Logo</h3>
+    <p>Logo skabt til min hjemmeside via Adobe Illustrator!</p>
+</div>
+
+</section>
+<!-- kontakt-mig -->
+
+<section class="kontakt-mig">
+    <h1>Kontakt Mig</h1>
+   
+
+    <div class="kontakt-container">
+        <div class="tekst-container">
+            <h2>Kontakt mig</h2>
+            <p>
+                Har du spørgsmål eller brug for yderligere oplysninger? <br> 
+                Du kan kontakte mig ved at bruge følgende oplysninger:
+                <br>
+                <strong>E-Mail:</strong> Maha58304@edu.ucl.dk
+                <br>
+                <strong>Telefon:</strong> +45 5325 8241
+            </p>
+        </div>
+        <div class="billede-container">
+            
+            <img src="Portræt uden baggrund.png" alt="Kontaktbillede">
+        </div>
+    </div>
+    
+    
+    
+
+
+
+
+</section>
+
+<div class="linje"></div>
+
+
+<!---- Footer ---->
+
+<section class="footer">
+    <h4>Mere Information</h4>
+    <p>Bliv Opdateret Og Følg Mig På Diverse Sociale Medier. Find Mig På Facebook, Instagram Og Kontakt Via Mail </p>
+    <div class="ikoner">
+        <i class="fa-brands fa-facebook" style="color: #000000;"></i>
+        <i class="fa-brands fa-instagram" style="color: #000000;"></i>
+        <i class="fa-regular fa-envelope" style="color: #000000;"></i>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Javascript for toggle menu -->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function VisMenu(){
+        navLinks.style.right = "0";
+    }
+    function SkjulMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+
+
+
+
+</body>
+</html>
