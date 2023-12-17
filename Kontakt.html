@@ -13,32 +13,36 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,700&display=swap" 
     rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    <style>
+        address {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <header class="header">
 
-        <a href="#">
-        <img src="p3/Logo.png" class="logo">
+<section class="sub-header">
+    <nav>
+        <a href="Præsentationspost.html">
+            <img src="p3/Logo.png" alt="logo" width="100" height="100">
         </a>
-
-        <input type="checkbox" id="check">
-        <label for="check" class="ikoner">
-            <i class='bx bx-menu' id="menu-ikon"></i>
-            <i class='bx bx-x' id="lukke-ikon"></i>
-        </label>
-
-        <nav class="navbar">
-            <a href="Præsentationspost.html" style="--i:0;">Forside</a>
-            <a href="Navbaren.html" style="--i:1;">Produkter</a>
-            <a href="Om-Mig.html" style="--i:2;">Om mig</a>
-            <a href="Kontakt.html" style="--i:3;">Kontakt</a>
-        </nav>
-    </header>
+        <div class="nav-links" id="navLinks">
+            <i class="fas fa-times" onclick="SkjulMenu()"></i>
+            <ul>
+                <li><a href="Præsentationspost.html">Forside</a></li>
+                <li><a href="Produkter.html">Produkter</a></li>
+                <li><a href="Om-Mig.html">Om mig</a></li>
+                <li><a href="Kontakt.html">Kontakt</a></li>
+            </ul>
+        </div>
+        <i class="fas fa-bars" onclick="VisMenu()"></i>
+    </nav>
+    <h1>Kontakt Information</h1>
+</section>
 
 <!----Kontakt---->
 
 <section class="kontakt-mig">
-    
     <article class="kontakt-container">
         <div class="tekst-container">
             <h2 class="kontaktinformation">Kontakt mig</h2>
@@ -46,32 +50,17 @@
                 Har du spørgsmål eller brug for yderligere oplysninger? <br>
                 Du kan kontakte mig ved at bruge følgende oplysninger:
                 <br> <br> <br>
-
-                <style>
-                    address {
-                        text-align: center; 
-                    }
-                </style>
-                
-                <address>
-                    <strong>E-Mail:</strong> <a href="mailto:Maha58304@edu.ucl.dk">Maha58304@edu.ucl.dk</a><br>
-                    <strong>Telefon:</strong> <a href="tel:+4553258241">+45 5325 8241</a>
-                </address>
-                
             </p>
+            <address>
+                <strong>E-Mail:</strong> <a href="mailto:Maha58304@edu.ucl.dk">Maha58304@edu.ucl.dk</a><br>
+                <strong>Telefon:</strong> <a href="tel:+4553258241">+45 5325 8241</a>
+            </address>
         </div>
         <div class="billede-container">
-            <img src="p3/Portrææææt.png" alt="Kontaktbillede" title="Kontaktbillede af mig">
+            <img src="p3/portrætafmig.jpg" alt="Kontaktbillede" title="Kontaktbillede af mig">
         </div>
     </article>
 </section>
-
- 
-
-
-
-
-
 
 <!---- Footer ---->
 
@@ -85,13 +74,6 @@
     </div>
 </section>
 
-
-
-
-
-
-
-
 <!-- Javascript for toggle menu -->
 <script>
     var navLinks = document.getElementById("navLinks");
@@ -102,10 +84,6 @@
         navLinks.style.right = "-200px";
     }
 </script>
-
-
-
-
 
 </body>
 </html>
